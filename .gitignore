@@ -1,0 +1,7 @@
+# Environments
+.env
+venv/
+*.pyc
+
+# macOS
+.DS_Store
