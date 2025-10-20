@@ -1,0 +1,31 @@
+## Medi-Partner-GUI-cloud デプロイ作業依頼
+
+### 目的
+現在ローカル環境で動作しているStreamlitアプリケーション「Medi-Partner-GUI-cloud」を、インターネット経由で誰でもアクセス可能なWebアプリケーションとしてデプロイしてください。
+
+### プロジェクト概要
+- **アプリケーション名:** Medi-Partner-GUI-cloud
+- **機能:** ORCAや医療事務に関する質問にAIが回答するチャットボット
+- **フレームワーク:** Streamlit
+- **AIモデル:** Google Gemini Pro
+- **ソースコード:** `/Users/user/Documents/VScode/Medi-Partner-GUI-cloud/app.py`
+- **依存ライブラリ:** `/Users/user/Documents/VScode/Medi-Partner-GUI-cloud/requirements.txt`
+
+### デプロイ要件
+1.  **GitHubリポジトリの作成:**
+    -   現在のプロジェクト (`/Users/user/Documents/VScode/Medi-Partner-GUI-cloud/`) をGitHubの新しいパブリックリポジトリにプッシュしてください。
+    -   リポジトリには `app.py`, `requirements.txt`, `.env`ファイル（`GEMINI_API_KEY`の記述は削除するか、.gitignoreに含めてください）など、実行に必要なファイルを含めてください。
+
+2.  **デプロイ先の選定と実行:**
+    -   **Streamlit Community Cloud** の利用を第一候補としてください。無料で簡単にデプロイできます。
+    -   GitHubアカウントを連携し、上記で作成したリポジトリを指定してデプロイを実行してください。
+
+3.  **環境変数の設定:**
+    -   アプリケーションの動作にはGoogle GeminiのAPIキーが必要です。
+    -   デプロイ先の環境（Streamlit Community Cloudの場合はSecrets管理機能）で、`GEMINI_API_KEY` という名前の環境変数を設定してください。値はユーザーから提供されたものを利用してください。
+
+4.  **動作確認:**
+    -   デプロイ完了後、発行された公開URLにアクセスし、アプリケーションが正常に起動し、AIとのチャットが問題なく行えることを確認してください。
+
+5.  **完了報告:**
+    -   作業が完了したら、デプロイ先の公開URLを報告してください。
