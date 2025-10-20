@@ -1,7 +1,20 @@
 # Environments
 .env
+
+# Virtual environment
 venv/
+/venv/
+__pycache__/
+
+# IDE / Editor specific
+.vscode/
+.idea/
+
+# Python cache
 *.pyc
 
 # macOS
 .DS_Store
+
+# Other
+pdf-summary-app-2025-021034b33d0b.json
